@@ -14,4 +14,10 @@ public class CalculatorController {
             @RequestParam double inch){
         return Calculator.centimeter(inch);
     }
+
+    @RequestMapping("/meter")
+    public double meter(
+            @RequestParam double yard){
+        return Calculator.meter(yard);
+    }
 }
