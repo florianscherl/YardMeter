@@ -21,4 +21,18 @@ public class CalculatorTest {
         //Assert
         assertEquals(expected,result);
     }
+
+    @Test
+
+    void meter(){
+        //Arrange
+        double yard = 1;
+        double expected = 0.9144;
+
+        //Act
+        double result = calculator.meter(yard);
+
+        //Assert
+        assertEquals(expected,result);
+    }
 }
